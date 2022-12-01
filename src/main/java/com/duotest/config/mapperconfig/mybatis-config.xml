@@ -1,0 +1,15 @@
+<configuration>
+
+    <settings>
+<!--         - Укажите поведение при обнаружении неизвестных столбцов (или неизвестных типов атрибутов) цели автоматического сопоставления; по умолчанию: НЕТ-->
+<!--        НЕТ: реакции нет;-->
+<!--        ВНИМАНИЕ: вывод журнала напоминаний (уровень журнала org.apache.ibatis.session.AutoMappingUnknownColumnBehavior должен быть установлен на WARN))-->
+<!--        ОТКАЗ: сбой сопоставления (выдает исключение SqlSessionException)-->
+        <setting name="autoMappingUnknownColumnBehavior" value="WARNING"/>
+<!--        - Следует ли включить автоматическое сопоставление регистров верблюда, то есть аналогичное сопоставление классического имени столбца базы данных A_COLUMN с классическим именем свойства Java aColumn.-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+<!--         Допустимое значение - ноль-->
+        <setting name="jdbcTypeForNull" value="NULL"/>
+    </settings>
+
+</configuration>
